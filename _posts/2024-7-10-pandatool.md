@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Magna
+title: PandaTool
 description: Lorem etiam nullam
 image: assets/images/pic03.jpg
 ---
