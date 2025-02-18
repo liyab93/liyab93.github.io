@@ -16,7 +16,10 @@ phone: (716) 555-5555
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
 tiles-count: 6
-
+# 禁止加载到首页的文件夹
+tiles-exclude-folders:
+  - _terms
+  - _policys
 # social settings (key must match name of font awesome icon)
 # see https://fontawesome.com/icons?d=gallery&p=2&s=brands
 # Icons are not shown if value is empty
@@ -42,3 +45,8 @@ exclude:
 - LICENSE.md
 - CONTRIBUTING.md
 - README.md 
+
+# 参与编译的文件夹
+include:
+  - _terms
+  - _policys
