@@ -1,8 +1,8 @@
 # site settings
 title: liyb
-subtitle: A simple program developer
+subtitle: 用代码，创造无限可能
 email: liyb@aliyun.com
-description: We are committed to developing innovative and practical applications designed to provide a more efficient, convenient and interesting digital experience for all kinds of users. Whether you are looking for tools to improve work efficiency or applications that add more fun to your life, we can provide you with the right choice.
+description: 欢迎来到我的 App 世界！这里记录着我的开发历程，分享着我的作品，也期待着与你交流。希望你能在这里发现有趣的 App，感受科技的魅力！
 baseurl: "" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author:
