@@ -31,3 +31,8 @@ nav-menu: true
 | ![](./assets/images/paperkite_1.png) | ![](./assets/images/paperkite_2.png) |
 | ![](./assets/images/paperkite_3.png) | ![](./assets/images/paperkite_4.png) |
 | ![](./assets/images/paperkite_5.png) |  |
+
+## 使用教程
+- [Unsplash](./cn/guides/unsplash.html)
+- [Pexels](./cn/guides/pexels.html)
+- [Pixabay](./cn/guides/pixabay.html)

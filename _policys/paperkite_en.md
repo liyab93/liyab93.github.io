@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Privacy Policy
-permalink: /policys/
+title: PaperKite Privacy Policy
+permalink: /en/policys/paperkite
 ---
 
 ## Privacy Policy
@@ -25,5 +25,5 @@ When you choose to use a custom key to access third-party wallpaper platforms (e
 - The content accessed through API keys is provided by third parties, and the relevant terms are determined by the respective platforms.
 
 ### Updates to the Privacy Policy
-We may update this privacy policy as needed. Any changes will be reflected in the latest version of the application. Please review this policy periodically.
+- We may update this privacy policy as needed. Any changes will be reflected in the latest version of the application. Please review this policy periodically.
 
