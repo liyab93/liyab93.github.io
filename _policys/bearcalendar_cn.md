@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 小熊日历隐私政策
-permalink: /cn/policys/bearcalendar
+permalink: /policys/bearcalendar
 ---
 
 ## 隐私政策

@@ -1,12 +1,13 @@
 ---
 layout: post
-title: 纸鸢
+title: 紙鳶
 description: 让每一寸屏幕成为流动的艺术馆
 image: assets/images/paperkite_bg.png
 nav-menu: true
+permalink: /tr/1-paperkite
 ---
 
-[![AppStrore](./assets/images/appstore_black.svg)](https://apps.apple.com/app/id6478072747)
+[![AppStrore](./../assets/images/appstore_black.svg)](https://apps.apple.com/app/id6478072747)
 
 ## 简介
 为什么选择纸鸢？
@@ -28,11 +29,11 @@ nav-menu: true
 
 |       |  |
 | ----------- | ----------- |
-| ![](./assets/images/paperkite_1.png) | ![](./assets/images/paperkite_2.png) |
-| ![](./assets/images/paperkite_3.png) | ![](./assets/images/paperkite_4.png) |
-| ![](./assets/images/paperkite_5.png) |  |
+| ![](./../assets/images/paperkite_1.png) | ![](./../assets/images/paperkite_2.png) |
+| ![](./../assets/images/paperkite_3.png) | ![](./../assets/images/paperkite_4.png) |
+| ![](./../assets/images/paperkite_5.png) |  |
 
 ## 使用教程
-- [Unsplash](./guides/unsplash.html)
-- [Pexels](./guides/pexels.html)
-- [Pixabay](./guides/pixabay.html)
+- [Unsplash](./tr/guides/unsplash.html)
+- [Pexels](./tr/guides/pexels.html)
+- [Pixabay](./tr/guides/pixabay.html)

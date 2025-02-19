@@ -20,6 +20,7 @@ tiles-count: 6
 tiles-exclude-folders:
   - _policys
   - _guides
+  - _home
 
 # social settings (key must match name of font awesome icon)
 # see https://fontawesome.com/icons?d=gallery&p=2&s=brands
@@ -51,3 +52,4 @@ exclude:
 include:
   - _policys
   - _guides
+  - _home

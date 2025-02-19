@@ -1,22 +1,22 @@
 ---
 layout: post
 title: Pixabay 使用教程
-permalink: /cn/guides/pixabay
+permalink: /guides/pixabay
 ---
 
 ## 注册登录
 
 [Pixabay 官网](https://www.pixabay.com)
 
-![pixabay](./../../assets/images/pixabay.png)
+![pixabay](./../assets/images/pixabay.png)
 
 ## 获取秘钥
 
-![1](./../../assets/images/pixabay_1.png)
+![1](./../assets/images/pixabay_1.png)
 
-![2](./../../assets/images/pixabay_2.png)
+![2](./../assets/images/pixabay_2.png)
 
-![3](./../../assets/images/pixabay_3.png)
+![3](./../assets/images/pixabay_3.png)
 
 ## 填写秘钥
 

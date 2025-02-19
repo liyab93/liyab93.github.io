@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 熊猫工具箱隐私政策
-permalink: /cn/policys/pandatool
+permalink: /policys/pandatool
 ---
 
 ## 隐私政策

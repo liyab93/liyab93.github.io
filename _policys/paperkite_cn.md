@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 纸鸢隐私政策
-permalink: /cn/policys/paperkite
+permalink: /policys/paperkite
 ---
 
 ## 隐私政策
