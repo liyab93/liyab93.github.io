@@ -35,6 +35,6 @@ language: tr
 | ![](./../assets/images/paperkite_5.png) |  |
 
 ## 使用教程
-- [Unsplash](./tr/guides/unsplash.html)
-- [Pexels](./tr/guides/pexels.html)
-- [Pixabay](./tr/guides/pixabay.html)
+- [Unsplash](./guides/unsplash.html)
+- [Pexels](./guides/pexels.html)
+- [Pixabay](./guides/pixabay.html)

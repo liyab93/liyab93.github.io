@@ -35,6 +35,6 @@ language: en
 | ![](./../assets/images/paperkite_5.png) |  |
 
 ## 使用教程
-- [Unsplash](/en/guides/unsplash)
-- [Pexels](/en/guides/pexels)
-- [Pixabay](/en/guides/pixabay)
+- [Unsplash](./guides/unsplash)
+- [Pexels](./guides/pexels)
+- [Pixabay](./guides/pixabay)
