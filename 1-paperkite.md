@@ -4,6 +4,8 @@ title: 纸鸢
 description: 让每一寸屏幕成为流动的艺术馆
 image: assets/images/paperkite_bg.png
 nav-menu: true
+permalink: /paperkite
+language: cn
 ---
 
 [![AppStrore](./assets/images/appstore_black.svg)](https://apps.apple.com/app/id6478072747)

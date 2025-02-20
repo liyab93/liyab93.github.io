@@ -2,6 +2,7 @@
 layout: post
 title: BearCalendar Privaty Policy
 permalink: /en/policys/bearcalendar
+language: en
 ---
 
 ## Privacy Policy

@@ -2,6 +2,7 @@
 layout: post
 title: Pixabay Configuration Tutorial
 permalink: /en/guides/pixabay
+language: en
 ---
 
 ## Sign in / Sign up

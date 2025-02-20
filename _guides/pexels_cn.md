@@ -2,6 +2,7 @@
 layout: post
 title: Pexels 使用教程
 permalink: /guides/pexels
+language: cn
 ---
 
 ## 注册登录

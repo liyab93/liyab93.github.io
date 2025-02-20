@@ -2,6 +2,7 @@
 layout: post
 title: 小熊日曆隱私政策
 permalink: /tr/policys/bearcalendar
+language: tr
 ---
 
 ## 隱私政策

@@ -2,9 +2,10 @@
 title: 熊猫工具箱
 layout: post
 description: 一款为程序员提供的开发工具箱，旨在提高开发效率。
-image: assets/images/pandatool_1.png
+image: ./../assets/images/pandatool_1.png
 nav-menu: true
-permalink: /tr/3-pandatool
+permalink: /tr/pandatool
+language: tr
 ---
 [![AppStrore](./../assets/images/appstore_black.svg)](https://apps.apple.com/app/id6451439083)
 

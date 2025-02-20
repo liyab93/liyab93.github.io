@@ -2,6 +2,7 @@
 layout: post
 title: 纸鸢隐私政策
 permalink: /policys/paperkite
+language: cn
 ---
 
 ## 隐私政策

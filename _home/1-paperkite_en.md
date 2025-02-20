@@ -4,7 +4,8 @@ title: PaperKite
 description: 让每一寸屏幕成为流动的艺术馆
 image: ./../assets/images/paperkite_bg.png
 nav-menu: true
-permalink: /en/1-paperkite
+permalink: /en/paperkite
+language: en
 ---
 
 [![AppStrore](./../assets/images/appstore_black.svg)](https://apps.apple.com/app/id6478072747)
@@ -29,9 +30,9 @@ permalink: /en/1-paperkite
 
 |       |  |
 | ----------- | ----------- |
-| ![](/assets/images/paperkite_1.png) | ![](/assets/images/paperkite_2.png) |
-| ![](/assets/images/paperkite_3.png) | ![](/assets/images/paperkite_4.png) |
-| ![](/assets/images/paperkite_5.png) |  |
+| ![](./../assets/images/paperkite_1.png) | ![](./../assets/images/paperkite_2.png) |
+| ![](./../assets/images/paperkite_3.png) | ![](./../assets/images/paperkite_4.png) |
+| ![](./../assets/images/paperkite_5.png) |  |
 
 ## 使用教程
 - [Unsplash](/en/guides/unsplash)

@@ -2,6 +2,7 @@
 layout: post
 title: PandaTool Privacy Policy
 permalink: /en/policys/pandatool
+language: en
 ---
 
 ## Privacy Policy

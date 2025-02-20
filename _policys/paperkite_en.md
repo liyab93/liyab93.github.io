@@ -2,6 +2,7 @@
 layout: post
 title: PaperKite Privacy Policy
 permalink: /en/policys/paperkite
+language: en
 ---
 
 ## Privacy Policy

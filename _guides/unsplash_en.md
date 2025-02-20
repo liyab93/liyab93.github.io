@@ -2,6 +2,7 @@
 layout: post
 title: Unsplash Configuration Tutorial
 permalink: /en/guides/unsplash
+language: en
 ---
 
 ## Sign in / Sign up

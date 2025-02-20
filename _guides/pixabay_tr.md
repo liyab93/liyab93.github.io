@@ -2,6 +2,7 @@
 layout: post
 title: Pixabay 使用教程
 permalink: /tr/guides/pixabay
+language: tr
 ---
 
 ## 註冊登錄

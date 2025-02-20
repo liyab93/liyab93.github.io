@@ -2,6 +2,7 @@
 layout: post
 title: Pexels Configuration Tutorial
 permalink: /en/guides/pexels
+language: en
 ---
 
 ## Sign in / Sign up

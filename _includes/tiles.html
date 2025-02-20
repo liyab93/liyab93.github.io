@@ -1,21 +1,37 @@
+{% assign current_lang = 'cn' %}
+{% if page.language %}
+    {% assign current_lang = page.language %}
+{% elsif page.path contains '/en/' or page.path contains '/tr/' %}
+    {% assign current_lang = page.path | split: '/' | first %}
+{% endif %}
+
 {% if 'posts' == site.tiles-source %}
-    {% assign tiles = site.posts %}
+    {% assign all_pages = site.posts %}
+    {% for page in all_pages %}
+      {% if page.language == current_lang %}
+        {% assign tiles = tiles | push: page %}
+      {% endif %}
+    {% endfor %}
 {% elsif 'pages' == site.tiles-source %}
     {% assign all_pages = site.html_pages | where_exp: "item", "item.show_tile != false" %}
-    {% assign tiles = '' | split: '' %}
-    {% for page in all_pages %}
-        {% assign exclude = false %}
-        {% for folder in site.tiles-exclude-folders %}
-            {% if page.path contains folder %}
-                {% assign exclude = true %}
-                {% break %}
-            {% endif %}
-        {% endfor %}
-        {% unless exclude %}
-            {% assign tiles = tiles | push: page %}
-        {% endunless %}
-    {% endfor %}
 {% endif %}
+
+{% assign tiles = '' | split: '' %}
+{% for page in all_pages %}
+  {% if page.language == current_lang %}
+    {% assign exclude = false %}
+    {% for folder in site.tiles-exclude-folders %}
+        {% if page.path contains folder %}
+            {% assign exclude = true %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+    {% unless exclude %}
+        {% assign tiles = tiles | push: page %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+
 <section id="one" class="tiles">
   {% for tile in tiles limit:site.tiles-count %}
   <article>

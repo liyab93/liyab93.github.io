@@ -2,6 +2,7 @@
 layout: post
 title: Unsplash 使用教程
 permalink: /tr/guides/unsplash
+language: tr
 ---
 
 ## 註冊登錄

@@ -2,6 +2,7 @@
 layout: post
 title: 紙鳶隐私政策
 permalink: /tr/policys/paperkite
+language: tr
 ---
 
 ## 隐私政策

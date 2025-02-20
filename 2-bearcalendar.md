@@ -4,6 +4,8 @@ title: 小熊日历
 description: iOS & macOS 平台上一款简洁易用的日历
 image: assets/images/calendar_1.png
 nav-menu: true
+permalink: /bearcalendar
+language: cn
 ---
 
 [![AppStrore](./assets/images/appstore_black.svg)](https://apps.apple.com/app/id6477295542)

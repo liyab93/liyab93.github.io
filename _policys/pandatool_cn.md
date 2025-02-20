@@ -2,6 +2,7 @@
 layout: post
 title: 熊猫工具箱隐私政策
 permalink: /policys/pandatool
+language: cn
 ---
 
 ## 隐私政策

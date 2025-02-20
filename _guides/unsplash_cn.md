@@ -2,6 +2,7 @@
 layout: post
 title: Unsplash 使用教程
 permalink: /guides/unsplash
+language: cn
 ---
 
 ## 注册登录

@@ -2,9 +2,10 @@
 layout: post
 title: 紙鳶
 description: 让每一寸屏幕成为流动的艺术馆
-image: assets/images/paperkite_bg.png
+image: ./../assets/images/paperkite_bg.png
 nav-menu: true
-permalink: /tr/1-paperkite
+permalink: /tr/paperkite
+language: tr
 ---
 
 [![AppStrore](./../assets/images/appstore_black.svg)](https://apps.apple.com/app/id6478072747)

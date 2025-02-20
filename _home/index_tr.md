@@ -7,5 +7,6 @@ image: null
 author: null
 show_tile: false
 permalink: /tr/index
+language: tr
 ---
 
