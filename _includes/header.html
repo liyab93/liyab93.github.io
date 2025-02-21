@@ -1,9 +1,30 @@
+{% assign current_lang = 'cn' %}
+{% if page.language %}
+    {% assign current_lang = page.language %}
+{% elsif page.path contains '/en/' or page.path contains '/tr/' %}
+    {% assign current_lang = page.path | split: '/' | first %}
+{% endif %}
+
+{% if current_lang == 'en' %}
+	{% assign subtitle = site.i18n.en.subtitle %}
+	{% assign menu = site.i18n.en.menu %}
+	{% assign getStarted = site.i18n.en.getStarted %}
+{% elsif current_lang == 'tr' %}
+	{% assign subtitle = site.i18n.tr.subtitle %}
+	{% assign menu = site.i18n.tr.menu %}
+	{% assign getStarted = site.i18n.tr.getStarted %}
+{% else %}
+	{% assign subtitle = site.i18n.cn.subtitle %}
+	{% assign menu = site.i18n.cn.menu %}
+	{% assign getStarted = site.i18n.cn.getStarted %}
+{% endif %}
+
 <!-- Wrapper -->
 <div id="wrapper">
 
 <!-- Header -->
 <header id="header"{% if page.layout == "landing" %} class="alt style2"{% endif %}{% if page.layout == "home" %} class="alt"{% endif %}>
-	<a href="{{ "" | absolute_url }}/" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
+	<a href="{{ "" | absolute_url }}/" class="logo"><strong>{{ site.title }}</strong> <span>{{ subtitle }}</span></a>
 	<nav>
 		<div class="language-selector" style="display: inline-block;">
 			<style>
@@ -26,7 +47,7 @@
 				<option value="tr">繁</option>
 			</select>
 		</div>
-		<a href="#menu">菜单</a>
+		<a href="#menu">{{ menu }}</a>
 	</nav>
 </header>
 
@@ -68,7 +89,7 @@
         {% endfor %}
 	</ul>
 	<ul class="actions vertical">
-		<li><a href="#" class="button special fit">开始使用</a></li>
+		<li><a href="#" class="button special fit">{{ getStarted }}</a></li>
 <!--		<li><a href="#" class="button fit">Log In</a></li>-->
 	</ul>
 </nav>

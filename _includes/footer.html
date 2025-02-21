@@ -1,23 +1,50 @@
 <!-- Contact -->
+{% assign current_lang = 'cn' %}
+{% if page.language %}
+    {% assign current_lang = page.language %}
+{% elsif page.path contains '/en/' or page.path contains '/tr/' %}
+    {% assign current_lang = page.path | split: '/' | first %}
+{% endif %}
+
+{% if current_lang == 'en' %}
+	{% assign name = site.i18n.en.name %}
+	{% assign email = site.i18n.en.email %}
+	{% assign content = site.i18n.en.content %}
+	{% assign send = site.i18n.en.send %}
+	{% assign clear = site.i18n.en.clear %}
+{% elsif current_lang == 'tr' %}
+	{% assign name = site.i18n.tr.name %}
+	{% assign email = site.i18n.tr.email %}
+	{% assign content = site.i18n.tr.content %}
+	{% assign send = site.i18n.tr.send %}
+	{% assign clear = site.i18n.tr.clear %}
+{% else %}
+	{% assign name = site.i18n.cn.name %}
+	{% assign email = site.i18n.cn.email %}
+	{% assign content = site.i18n.cn.content %}
+	{% assign send = site.i18n.cn.send %}
+	{% assign clear = site.i18n.cn.clear %}
+{% endif %}
+
 <section id="contact">
 	<div class="inner">
 		<section>
 			<form action="https://formspree.io/{{ site.email }}" method="POST">
 				<div class="field half first">
-					<label for="name">昵称</label>
+					<label for="name">{{ name }}</label>
 					<input type="text" name="name" id="name" />
 				</div>
 				<div class="field half">
-					<label for="email">Email</label>
+					<label for="email">{{ email }}</label>
 					<input type="text" name="_replyto" id="email" />
 				</div>
 				<div class="field">
-					<label for="message">内容</label>
+					<label for="message">{{ content }}</label>
 					<textarea name="message" id="message" rows="6"></textarea>
 				</div>
 				<ul class="actions">
-					<li><input type="submit" value="发送" class="special" /></li>
-					<li><input type="reset" value="清空" /></li>
+					<li><input type="submit" value="{{ send }}" class="special" /></li>
+					<li><input type="reset" value="{{ clear }}" /></li>
 				</ul>
 			</form>
 		</section>
@@ -25,42 +52,10 @@
 			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-envelope"></span>
-					<h3>Email</h3>
+					<h3>{{ email }}</h3>
 					<a href="mailto:{{ site.email }}">{{ site.email }}</a>
 				</div>
 			</section>
-<!--        手机         -->
-<!--			<section>-->
-<!--				<div class="contact-method">-->
-<!--					<span class="icon alt fa-phone"></span>-->
-<!--					<h3>Phone</h3>-->
-<!--					<a href="tel:{{ site.phone }}">{{ site.phone }}</a>-->
-<!--				</div>-->
-<!--			</section>-->
-<!--         地址         -->
-<!--			<section>-->
-<!--				<div class="contact-method">-->
-<!--					<span class="icon alt fa-home"></span>-->
-<!--					<h3>Address</h3>-->
-<!--					<span>-->
-<!--					{% if site.street_address %}-->
-<!--					    {{ site.street_address }}<br />-->
-<!--					{% endif %}-->
-<!--					{% if site.city %}-->
-<!--					    {{ site.city }},-->
-<!--					{% endif %}-->
-<!--					{% if site.state %}-->
-<!--					    {{ site.state }} -->
-<!--					{% endif %}-->
-<!--					{% if site.zip_code %}-->
-<!--					    {{ site.zip_code }}<br />-->
-<!--					{% endif %}-->
-<!--					{% if site.country %}-->
-<!--					    {{ site.country }}-->
-<!--					{% endif %}-->
-<!--					</span>-->
-<!--				</div>-->
-<!--			</section>-->
 		</section>
 	</div>
 </section>

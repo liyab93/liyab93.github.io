@@ -1,17 +1,9 @@
 # site settings
 title: liyb
-subtitle: 用代码，创造无限可能
 email: liyb@aliyun.com
-description: 欢迎来到我的 App 世界！这里记录着我的开发历程，分享着我的作品，也期待着与你交流。希望你能在这里发现有趣的 App，感受科技的魅力！
 baseurl: "" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
-author:
-street_address: 1234 Somewhere Road
-city: Beijing
-state: Beijing
-zip_code: 100000
-country: China
-phone: (716) 555-5555
+author: liyb
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
@@ -41,6 +33,7 @@ markdown: kramdown
 sass:
   style: compressed
 
+# 忽略的文档
 exclude:
 - "*.gemspec"
 - LICENSE.md
@@ -52,3 +45,36 @@ include:
   - _policys
   - _guides
   - _home
+
+# 多语言
+i18n:
+  cn:
+    menu: "菜单"
+    name: "昵称"
+    email: "邮箱"
+    content: "内容"
+    send: "发送"
+    clear: "清空"
+    getStarted: "开始使用"
+    subtitle: "用代码，创造无限可能"
+    description: "欢迎来到我的 App 世界！这里记录着我的开发历程，分享着我的作品，也期待着与你交流。希望你能在这里发现有趣的 App，感受科技的魅力！"
+  en:
+    menu: "Menu"
+    name: "Name"
+    email: "Email"
+    content: "Message"
+    send: "Send"
+    clear: "Clear"
+    getStarted: "Get Started"
+    subtitle: "Use code, create unlimited possibilities"
+    description: "Welcome to my App world! Here, I record my development journey, share my works, and also expect to connect with you. I hope you can find interesting Apps here, and feel the charm of technology!"
+  tr:
+    menu: "菜單"
+    name: "暱稱"
+    email: "郵箱"
+    content: "內容"
+    send: "發送"
+    clear: "清除"
+    getStarted: "開始使用"
+    subtitle: "用代碼，創造無限可能"
+    description: "歡迎來到我的 App 世界！這裏記錄著我的開發歷程，分享著我的作品，也期待著與你交流。希望你能在這裏找到有趣的 App，感受科技的魅力！"
