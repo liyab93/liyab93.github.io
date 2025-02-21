@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PaperKite
-description: 让每一寸屏幕成为流动的艺术馆
+description: Elevate Your Screen’s wallpaper with Every Breeze
 image: ./../assets/images/paperkite_bg.png
 nav-menu: true
 permalink: /en/paperkite
@@ -10,23 +10,23 @@ language: en
 
 [![AppStrore](./../assets/images/appstore_black.svg)](https://apps.apple.com/app/id6478072747)
 
-## 简介
-为什么选择纸鸢？
+## Introduce
+Why PaperKite?
 
-「 精准场景匹配  」
-原生级模糊/精确双模搜索  
-10+垂直分类直达（自然・城市・抽象…） 
+「Precision Scene Navigation」
+Native fuzzy/exact search with 10+ categories
+(Nature・Urban・Abstract...)
 
-「百万级资源库  」
-无缝聚合 Unsplash / Pixabay / Pexels 顶尖图库资源   
+「Tri-Source Sync Engine」
+Direct access to Unsplash/Pixabay/Pexels APIs
 
-「空间定制哲学  」
-多屏独立画布 • 历史云端回溯 • 4K 无损渲染  
+「Multi-Space Architecture」
+Independent displays｜Local history｜4K rendering
 
-「 自由呼吸系统  」
-开放 API 密钥 | 自定义轮换频率 | 模糊/精准双模搜索
+「Control Without Limits」
+Custom API keys｜Minute-level cycling｜No data retention
 
-## 预览
+## Preview
 
 |       |  |
 | ----------- | ----------- |
@@ -34,7 +34,7 @@ language: en
 | ![](./../assets/images/paperkite_3.png) | ![](./../assets/images/paperkite_4.png) |
 | ![](./../assets/images/paperkite_5.png) |  |
 
-## 使用教程
+## Configuration Tutorial
 - [Unsplash](./guides/unsplash)
 - [Pexels](./guides/pexels)
 - [Pixabay](./guides/pixabay)

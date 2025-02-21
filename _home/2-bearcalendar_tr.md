@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 小熊日历
-description: iOS & macOS 平台上一款简洁易用的日历
+title: 小熊日曆
+description: iOS & macOS 平臺上一款簡潔易用的日曆
 image: ./../assets/images/calendar_1.png
 nav-menu: true
 permalink: /tr/bearcalendar
@@ -10,17 +10,16 @@ language: tr
 
 [![AppStrore](./../assets/images/appstore_black.svg)](https://apps.apple.com/app/id6477295542)
 
-## 简介
-小熊日历是 iOS & macOS 平台上一款简洁易用的日历，提供多种Widgets 样式让用户查看日历十分便捷，希望通过简洁的设计带给用户最方便的体验。
+## 簡介
+小熊日曆是 iOS & macOS 平臺上一款簡潔易用的日曆，提供多種Widgets 樣式讓用戶查看日曆十分便捷，希望通過簡潔的設計帶給用戶最方便的體驗。
 
 功能：
-- 农历公历，节日节气和法定节假日
-- 查看系统日历和提醒事项
-- 自定义状态栏显示样式，支持图标和日期
-- 提供多种主色调样式，适配深色模式
-- 支持日、周、月三种小组件样式
+- 萬年曆、農曆、節日節氣、每日宜忌、放假安排
+- 全面的日曆查看功能，隨時掌握日期，您的時間管理專家
+- 介面簡潔不冗餘，多種主題皮膚隨時切換，優質的中國日曆萬年曆
+- 多種小組件供你選擇，總有一款適合您
 
-## 预览
+## 預覽
 
 |       |  |
 | ----------- | ----------- |

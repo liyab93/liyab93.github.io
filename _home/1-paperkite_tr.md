@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 紙鳶
-description: 让每一寸屏幕成为流动的艺术馆
+description: 螢幕乘風而起，覽盡寰宇之美
 image: ./../assets/images/paperkite_bg.png
 nav-menu: true
 permalink: /tr/paperkite
@@ -10,23 +10,23 @@ language: tr
 
 [![AppStrore](./../assets/images/appstore_black.svg)](https://apps.apple.com/app/id6478072747)
 
-## 简介
-为什么选择纸鸢？
+## 簡介
+為何選擇紙鳶？
 
-「 精准场景匹配  」
-原生级模糊/精确双模搜索  
-10+垂直分类直达（自然・城市・抽象…） 
+「精準場景導航 」
+原生級模糊/精確雙模搜索
+10+垂直分類直達（自然・城市・抽象...） 
 
-「百万级资源库  」
-无缝聚合 Unsplash / Pixabay / Pexels 顶尖图库资源   
+「三源無縫聯動」
+直通Unsplash/Pixabay/Pexels官方接口   
 
-「空间定制哲学  」
-多屏独立画布 • 历史云端回溯 • 4K 无损渲染  
+「多維空間構築」
+獨立多屏佈局｜歷史軌跡回溯｜4K超清解析 
 
-「 自由呼吸系统  」
-开放 API 密钥 | 自定义轮换频率 | 模糊/精准双模搜索
+「自由操控哲學」
+開放API密鑰｜分鐘級輪換｜零數據滯留
 
-## 预览
+## 預覽
 
 |       |  |
 | ----------- | ----------- |

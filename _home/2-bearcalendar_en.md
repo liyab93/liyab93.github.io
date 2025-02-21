@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 小熊日历
-description: iOS & macOS 平台上一款简洁易用的日历
+title: Bear Calendar
+description: A simple and easy-to-use calendar on iOS & macOS platform
 image: ./../assets/images/calendar_1.png
 nav-menu: true
 permalink: /en/bearcalendar
@@ -10,17 +10,17 @@ language: en
 
 [![AppStrore](./../assets/images/appstore_black.svg)](https://apps.apple.com/app/id6477295542)
 
-## 简介
-小熊日历是 iOS & macOS 平台上一款简洁易用的日历，提供多种Widgets 样式让用户查看日历十分便捷，希望通过简洁的设计带给用户最方便的体验。
+## Introduce
+Bear Calendar is a simple and easy-to-use calendar on iOS & macOS platform, providing a variety of Widgets styles for users to view the calendar is very convenient, hope to bring users the most convenient experience through simple design.
 
-功能：
-- 农历公历，节日节气和法定节假日
-- 查看系统日历和提醒事项
-- 自定义状态栏显示样式，支持图标和日期
-- 提供多种主色调样式，适配深色模式
-- 支持日、周、月三种小组件样式
+Features:
+- Lunar calendar, festive seasons and statutory holidays
+- View system calendars and reminders
+- Custom status bar display style, supporting icons and dates
+- Provide a variety of dominant tone styles, suitable for dark mode
+- Support daily, weekly and monthly widget styles
 
-## 预览
+## Preview
 
 |       |  |
 | ----------- | ----------- |
