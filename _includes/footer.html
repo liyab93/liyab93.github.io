@@ -7,36 +7,35 @@
 {% endif %}
 
 {% if current_lang == 'en' %}
-	{% assign name = site.i18n.en.name %}
+	{% assign title = site.i18n.en.title %}
 	{% assign email = site.i18n.en.email %}
 	{% assign content = site.i18n.en.content %}
 	{% assign send = site.i18n.en.send %}
 	{% assign clear = site.i18n.en.clear %}
+	{% assign copyright = site.i18n.en.copyright %}
 {% elsif current_lang == 'tr' %}
-	{% assign name = site.i18n.tr.name %}
+	{% assign title = site.i18n.tr.title %}
 	{% assign email = site.i18n.tr.email %}
 	{% assign content = site.i18n.tr.content %}
 	{% assign send = site.i18n.tr.send %}
 	{% assign clear = site.i18n.tr.clear %}
+	{% assign copyright = site.i18n.tr.copyright %}
 {% else %}
-	{% assign name = site.i18n.cn.name %}
+	{% assign title = site.i18n.cn.title %}
 	{% assign email = site.i18n.cn.email %}
 	{% assign content = site.i18n.cn.content %}
 	{% assign send = site.i18n.cn.send %}
 	{% assign clear = site.i18n.cn.clear %}
+	{% assign copyright = site.i18n.cn.copyright %}
 {% endif %}
 
 <section id="contact">
 	<div class="inner">
 		<section>
-			<form action="https://formspree.io/{{ site.email }}" method="POST">
-				<div class="field half first">
-					<label for="name">{{ name }}</label>
+			<form id="contactForm" onsubmit="event.preventDefault(); sendEmail();">
+				<div class="field">
+					<label for="title">{{ title }}</label>
 					<input type="text" name="name" id="name" />
-				</div>
-				<div class="field half">
-					<label for="email">{{ email }}</label>
-					<input type="text" name="_replyto" id="email" />
 				</div>
 				<div class="field">
 					<label for="message">{{ content }}</label>
@@ -75,10 +74,7 @@
 				{% endfor %}
 			</ul>
 			<ul class="copyright">
-<!--				<li>&copy; {{ site.title }} {{ site.subtitle }}</li>-->
-                <li>Copyright ©2024 liyb, All right reserved.</a></li>
-<!--				<li>Jekyll integration: <a href="https://github.com/andrewbanchich" target="_blank">Andrew Banchich</a></li>-->
-
+                <li>{{ copyright }}</a></li>
 			</ul>
 		</div>
 	</footer>
@@ -86,10 +82,17 @@
 </div>
 
 <!-- Scripts -->
-	<script src="{{ "assets/js/jquery.min.js" | absolute_url }}"></script>
-	<script src="{{ "assets/js/jquery.scrolly.min.js" | absolute_url }}"></script>
-	<script src="{{ "assets/js/jquery.scrollex.min.js" | absolute_url }}"></script>
-	<script src="{{ "assets/js/skel.min.js" | absolute_url }}"></script>
-	<script src="{{ "assets/js/util.js" | absolute_url }}"></script>
-	<!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
-	<script src="{{ "assets/js/main.js" | absolute_url }}"></script>
+<script src="{{ "assets/js/jquery.min.js" | absolute_url }}"></script>
+<script src="{{ "assets/js/jquery.scrolly.min.js" | absolute_url }}"></script>
+<script src="{{ "assets/js/jquery.scrollex.min.js" | absolute_url }}"></script>
+<script src="{{ "assets/js/skel.min.js" | absolute_url }}"></script>
+<script src="{{ "assets/js/util.js" | absolute_url }}"></script>
+<script src="{{ "assets/js/main.js" | absolute_url }}"></script>
+<script>
+	function sendEmail() {
+		const name = document.getElementById('name').value;
+		const message = document.getElementById('message').value;
+		const mailtoLink = `mailto:{{ site.email }}?subject=${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
+		window.location.href = mailtoLink;
+	}
+</script>

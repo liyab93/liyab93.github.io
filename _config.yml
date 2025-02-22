@@ -50,7 +50,7 @@ include:
 i18n:
   cn:
     menu: "菜单"
-    name: "昵称"
+    title: "标题"
     email: "邮箱"
     content: "内容"
     send: "发送"
@@ -58,9 +58,10 @@ i18n:
     getStarted: "开始使用"
     subtitle: "用代码，创造无限可能"
     description: "欢迎来到我的 App 世界！这里记录着我的开发历程，分享着我的作品，也期待着与你交流。希望你能在这里发现有趣的 App，感受科技的魅力！"
+    copyright: "版权所有 ©2024 liyb，保留所有权利。"
   en:
     menu: "Menu"
-    name: "Name"
+    title: "Title"
     email: "Email"
     content: "Message"
     send: "Send"
@@ -68,9 +69,10 @@ i18n:
     getStarted: "Get Started"
     subtitle: "Use code, create unlimited possibilities"
     description: "Welcome to my App world! Here, I record my development journey, share my works, and also expect to connect with you. I hope you can find interesting Apps here, and feel the charm of technology!"
+    copyright: "Copyright ©2024 liyb, All right reserved."
   tr:
     menu: "菜單"
-    name: "暱稱"
+    title: "標題"
     email: "郵箱"
     content: "內容"
     send: "發送"
@@ -78,3 +80,4 @@ i18n:
     getStarted: "開始使用"
     subtitle: "用代碼，創造無限可能"
     description: "歡迎來到我的 App 世界！這裏記錄著我的開發歷程，分享著我的作品，也期待著與你交流。希望你能在這裏找到有趣的 App，感受科技的魅力！"
+    copyright: "版權所有 ©2024 liyb，保留所有權利。"
