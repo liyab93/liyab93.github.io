@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 紙鳶隐私政策
-permalink: /tr/policys/paperkite
-language: tr
+permalink: /ct/policys/paperkite
+language: ct
 ---
 
 ## 隐私政策

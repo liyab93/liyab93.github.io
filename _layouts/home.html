@@ -1,16 +1,16 @@
 {% assign current_lang = 'cn' %}
 {% if page.language %}
     {% assign current_lang = page.language %}
-{% elsif page.path contains '/en/' or page.path contains '/tr/' %}
+{% elsif page.path contains '/en/' or page.path contains '/ct/' %}
     {% assign current_lang = page.path | split: '/' | first %}
 {% endif %}
 
 {% if current_lang == 'en' %}
 	{% assign description = site.i18n.en.description %}
 	{% assign getStarted = site.i18n.en.getStarted %}
-{% elsif current_lang == 'tr' %}
-	{% assign description = site.i18n.tr.description %}
-	{% assign getStarted = site.i18n.tr.getStarted %}
+{% elsif current_lang == 'ct' %}
+	{% assign description = site.i18n.ct.description %}
+	{% assign getStarted = site.i18n.ct.getStarted %}
 {% else %}
 	{% assign description = site.i18n.cn.description %}
 	{% assign getStarted = site.i18n.cn.getStarted %}

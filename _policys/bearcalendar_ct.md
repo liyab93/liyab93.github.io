@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 小熊日曆隱私政策
-permalink: /tr/policys/bearcalendar
-language: tr
+permalink: /ct/policys/bearcalendar
+language: ct
 ---
 
 ## 隱私政策

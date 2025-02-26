@@ -4,8 +4,8 @@ title: 紙鳶
 description: 螢幕乘風而起，覽盡寰宇之美
 image: ./../assets/images/paperkite_bg.png
 nav-menu: true
-permalink: /tr/paperkite
-language: tr
+permalink: /ct/paperkite
+language: ct
 ---
 
 [![AppStrore](./../assets/images/appstore_black.svg)](https://apps.apple.com/app/id6478072747)

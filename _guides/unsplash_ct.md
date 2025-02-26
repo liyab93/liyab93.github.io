@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Unsplash 使用教程
-permalink: /tr/guides/unsplash
-language: tr
+permalink: /ct/guides/unsplash
+language: ct
 ---
 
 ## 註冊登錄

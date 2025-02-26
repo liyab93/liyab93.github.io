@@ -6,7 +6,7 @@ description: null
 image: null
 author: null
 show_tile: false
-permalink: /tr/index
-language: tr
+permalink: /ct/index
+language: ct
 ---
 

@@ -2,7 +2,7 @@
 {% assign current_lang = 'cn' %}
 {% if page.language %}
     {% assign current_lang = page.language %}
-{% elsif page.path contains '/en/' or page.path contains '/tr/' %}
+{% elsif page.path contains '/en/' or page.path contains '/ct/' %}
     {% assign current_lang = page.path | split: '/' | first %}
 {% endif %}
 
@@ -13,13 +13,13 @@
 	{% assign send = site.i18n.en.send %}
 	{% assign clear = site.i18n.en.clear %}
 	{% assign copyright = site.i18n.en.copyright %}
-{% elsif current_lang == 'tr' %}
-	{% assign title = site.i18n.tr.title %}
-	{% assign email = site.i18n.tr.email %}
-	{% assign content = site.i18n.tr.content %}
-	{% assign send = site.i18n.tr.send %}
-	{% assign clear = site.i18n.tr.clear %}
-	{% assign copyright = site.i18n.tr.copyright %}
+{% elsif current_lang == 'ct' %}
+	{% assign title = site.i18n.ct.title %}
+	{% assign email = site.i18n.ct.email %}
+	{% assign content = site.i18n.ct.content %}
+	{% assign send = site.i18n.ct.send %}
+	{% assign clear = site.i18n.ct.clear %}
+	{% assign copyright = site.i18n.ct.copyright %}
 {% else %}
 	{% assign title = site.i18n.cn.title %}
 	{% assign email = site.i18n.cn.email %}

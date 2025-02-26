@@ -4,8 +4,8 @@ layout: post
 description: 一款為程式員提供的開發工具箱，旨在提高開發效率。
 image: ./../assets/images/pandatool_1.png
 nav-menu: true
-permalink: /tr/pandatool
-language: tr
+permalink: /ct/pandatool
+language: ct
 ---
 [![AppStrore](./../assets/images/appstore_black.svg)](https://apps.apple.com/app/id6451439083)
 

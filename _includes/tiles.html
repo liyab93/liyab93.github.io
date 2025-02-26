@@ -1,7 +1,7 @@
 {% assign current_lang = 'cn' %}
 {% if page.language %}
     {% assign current_lang = page.language %}
-{% elsif page.path contains '/en/' or page.path contains '/tr/' %}
+{% elsif page.path contains '/en/' or page.path contains '/ct/' %}
     {% assign current_lang = page.path | split: '/' | first %}
 {% endif %}
 

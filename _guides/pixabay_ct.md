@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Pixabay 使用教程
-permalink: /tr/guides/pixabay
-language: tr
+permalink: /ct/guides/pixabay
+language: ct
 ---
 
 ## 註冊登錄

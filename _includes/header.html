@@ -1,7 +1,7 @@
 {% assign current_lang = 'cn' %}
 {% if page.language %}
     {% assign current_lang = page.language %}
-{% elsif page.path contains '/en/' or page.path contains '/tr/' %}
+{% elsif page.path contains '/en/' or page.path contains '/ct/' %}
     {% assign current_lang = page.path | split: '/' | first %}
 {% endif %}
 
@@ -9,10 +9,10 @@
 	{% assign subtitle = site.i18n.en.subtitle %}
 	{% assign menu = site.i18n.en.menu %}
 	{% assign getStarted = site.i18n.en.getStarted %}
-{% elsif current_lang == 'tr' %}
-	{% assign subtitle = site.i18n.tr.subtitle %}
-	{% assign menu = site.i18n.tr.menu %}
-	{% assign getStarted = site.i18n.tr.getStarted %}
+{% elsif current_lang == 'ct' %}
+	{% assign subtitle = site.i18n.ct.subtitle %}
+	{% assign menu = site.i18n.ct.menu %}
+	{% assign getStarted = site.i18n.ct.getStarted %}
 {% else %}
 	{% assign subtitle = site.i18n.cn.subtitle %}
 	{% assign menu = site.i18n.cn.menu %}
@@ -44,7 +44,7 @@
 			<select id="languageSelect" onchange="changeLanguage(this.value)" style="background: transparent; border: 1px solid #fff; color: #fff; width: 30px; height: 30px; border-radius: 50%; text-align-last: center; -webkit-appearance: none; -moz-appearance: none; appearance: none; cursor: pointer; padding: 0; vertical-align: middle;">
 				<option value="cn">中</option>
 				<option value="en">EN</option>
-				<option value="tr">繁</option>
+				<option value="ct">繁</option>
 			</select>
 		</div>
 		<a href="#menu">{{ menu }}</a>
@@ -59,7 +59,7 @@
             {% assign current_lang = page.language %}
         {% else %}
             {% assign path_parts = page.url | split: '/' %}
-            {% if path_parts[1] == 'en' or path_parts[1] == 'tr' %}
+            {% if path_parts[1] == 'en' or path_parts[1] == 'ct' %}
                 {% assign current_lang = path_parts[1] %}
             {% endif %}
         {% endif %}
@@ -67,7 +67,7 @@
         {% for page in site.pages %}
             {% assign page_lang = page.language %}
             {% if page.layout == "home" %}
-                {% if current_lang == 'cn' and page_lang != 'en' and page_lang != 'tr' %}
+                {% if current_lang == 'cn' and page_lang != 'en' and page_lang != 'ct' %}
                     <li><a href="{{ '' | absolute_url }}/">{{ page.title }}</a></li>
                 {% elsif page_lang == current_lang %}
                     <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
@@ -79,7 +79,7 @@
             {% assign page_lang = page.language %}
             {% if page.layout != "home" and page.nav-menu == true %}
                 {% if current_lang == page_lang %}
-                    {% if current_lang == 'cn' and page_lang != 'en' and page_lang != 'tr' %}
+                    {% if current_lang == 'cn' and page_lang != 'en' and page_lang != 'ct' %}
                         <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
                     {% else %}
                         <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
@@ -103,7 +103,7 @@ function changeLanguage(lang) {
     let parts = path.split('/');
     
     // 检查当前URL是否已经包含语言代码
-    if (['en', 'tr'].includes(parts[0])) {
+    if (['en', 'ct'].includes(parts[0])) {
         // 当前路径包含语言代码
         if (lang === 'cn') {
             // 切换到简体中文，移除语言代码
@@ -130,7 +130,7 @@ function changeLanguage(lang) {
 document.addEventListener('DOMContentLoaded', function() {
     let path = window.location.pathname;
     let lang = path.split('/')[1];
-    if (['en', 'tr'].includes(lang)) {
+    if (['en', 'ct'].includes(lang)) {
         document.getElementById('languageSelect').value = lang;
     } else {
         document.getElementById('languageSelect').value = 'cn'; // 默认语言
