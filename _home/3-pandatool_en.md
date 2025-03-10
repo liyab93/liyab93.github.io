@@ -7,7 +7,7 @@ nav-menu: true
 permalink: /en/pandatool
 language: en
 ---
-[![AppStrore](./../assets/images/appstore_black.svg)](https://apps.apple.com/app/id6451439083)
+[![AppStrore](./../assets/images/mac_appstore.svg)](https://apps.apple.com/app/id6451439083)
 
 ## Introduce
 The Panda Toolbox is a development toolbox for programmers designed to improve development efficiency.

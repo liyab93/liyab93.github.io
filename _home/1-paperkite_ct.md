@@ -8,7 +8,7 @@ permalink: /ct/paperkite
 language: ct
 ---
 
-[![AppStrore](./../assets/images/appstore_black.svg)](https://apps.apple.com/app/id6478072747)
+[![AppStrore](./../assets/images/mac_appstore.svg)](https://apps.apple.com/app/id6478072747)
 
 ## 簡介
 為何選擇紙鳶？

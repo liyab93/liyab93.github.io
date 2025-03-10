@@ -9,14 +9,17 @@
 	{% assign subtitle = site.i18n.en.subtitle %}
 	{% assign menu = site.i18n.en.menu %}
 	{% assign getStarted = site.i18n.en.getStarted %}
+    {% assign url = "/en/" %}
 {% elsif current_lang == 'ct' %}
 	{% assign subtitle = site.i18n.ct.subtitle %}
 	{% assign menu = site.i18n.ct.menu %}
 	{% assign getStarted = site.i18n.ct.getStarted %}
+    {% assign url = "/ct/" %}
 {% else %}
 	{% assign subtitle = site.i18n.cn.subtitle %}
 	{% assign menu = site.i18n.cn.menu %}
 	{% assign getStarted = site.i18n.cn.getStarted %}
+    {% assign url = "/" %}
 {% endif %}
 
 <!-- Wrapper -->
@@ -24,7 +27,7 @@
 
 <!-- Header -->
 <header id="header"{% if page.layout == "landing" %} class="alt style2"{% endif %}{% if page.layout == "home" %} class="alt"{% endif %}>
-	<a href="{{ "" | absolute_url }}/" class="logo"><strong>{{ site.title }}</strong> <span>{{ subtitle }}</span></a>
+	<a href="{{ url }}" class="logo"><strong>{{ site.title }}</strong> <span>{{ subtitle }}</span></a>
 	<nav>
 		<div class="language-selector" style="display: inline-block;">
 			<style>

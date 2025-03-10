@@ -8,7 +8,7 @@ permalink: /en/paperkite
 language: en
 ---
 
-[![AppStrore](./../assets/images/appstore_black.svg)](https://apps.apple.com/app/id6478072747)
+[![AppStrore](./../assets/images/mac_appstore.svg)](https://apps.apple.com/app/id6478072747)
 
 ## Introduce
 Why PaperKite?

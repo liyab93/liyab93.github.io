@@ -8,10 +8,11 @@ permalink: /bearcalendar
 language: cn
 ---
 
-[![AppStrore](./assets/images/appstore_black.svg)](https://apps.apple.com/app/id6477295542)
+[![iOS](./../assets/images/appstore.svg)](https://apps.apple.com/app/id6478820878)
+[![macOS](./../assets/images/mac_appstore.svg)](https://apps.apple.com/app/id6477295542)
 
 ## 简介
-小熊日历是 iOS & macOS 平台上一款简洁易用的日历，提供多种Widgets 样式让用户查看日历十分便捷，希望通过简洁的设计带给用户最方便的体验。
+小熊日历是 [iOS](https://apps.apple.com/app/id6478820878) & [macOS](https://apps.apple.com/app/id6477295542) 平台上一款简洁易用的日历，提供多种Widgets 样式让用户查看日历十分便捷，希望通过简洁的设计带给用户最方便的体验。
 
 功能：
 - 农历公历，节日节气和法定节假日

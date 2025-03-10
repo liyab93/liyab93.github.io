@@ -8,7 +8,7 @@ permalink: /paperkite
 language: cn
 ---
 
-[![AppStrore](./assets/images/appstore_black.svg)](https://apps.apple.com/app/id6478072747)
+[![AppStrore](./assets/images/mac_appstore.svg)](https://apps.apple.com/app/id6478072747)
 
 ## 简介
 为什么选择纸鸢？

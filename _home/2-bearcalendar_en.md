@@ -8,10 +8,11 @@ permalink: /en/bearcalendar
 language: en
 ---
 
-[![AppStrore](./../assets/images/appstore_black.svg)](https://apps.apple.com/app/id6477295542)
+[![iOS](./../assets/images/appstore.svg)](https://apps.apple.com/app/id6478820878)
+[![macOS](./../assets/images/mac_appstore.svg)](https://apps.apple.com/app/id6477295542)
 
 ## Introduce
-Bear Calendar is a simple and easy-to-use calendar on iOS & macOS platform, providing a variety of Widgets styles for users to view the calendar is very convenient, hope to bring users the most convenient experience through simple design.
+Bear Calendar is a simple and easy-to-use calendar on [iOS](https://apps.apple.com/app/id6478820878) & [macOS](https://apps.apple.com/app/id6477295542) platform, providing a variety of Widgets styles for users to view the calendar is very convenient, hope to bring users the most convenient experience through simple design.
 
 Features:
 - Lunar calendar, festive seasons and statutory holidays
