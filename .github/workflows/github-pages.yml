@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Create CNAME file
+        run: echo "liyb.fun" > CNAME  # 确保 CNAME 文件存在
       - uses:  helaili/jekyll-action@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
