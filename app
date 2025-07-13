@@ -9,9 +9,9 @@
             },
             "icon": "https://liyb.fun/assets/images/app/pandatool.png",
             "sortDetail": {
-                "cn": "熊猫工具箱是一款为程序员提供的开发工具箱，旨在提高开发效率。\n主要功能如下:\n- HTTP接口测试: 支持get、post、put、delete、trace、head、options等请求方式\n- JSON格式化：支持JSON压缩、格式化、去除转义符、导出至文件等\n- 色彩空间：提供色卡、渐变色、调色板、色值转换\n- AppIcon：导入图片，一键生成iPhone、iPad、Mac、iWatch、Carplay、Android图标\n- 二维码: 多样化二维码生成，支持自定义logo、水印背景、gif样式\n- 字符串编解码: 支持Unicode、URL、Base64编解码\n- 字符串加解密: 支持AES、DES等常用对称加密和SHA1、SHA224、SHA356、MD5等HASH算法\n- 正则测试: 正则表达式测试\n- Xpath和Css选择测试: 支持Xpath和Css选择测试\n- 随机字符: 自定义字符长度、字符集",
-                "en": "The Panda Toolbox is a development toolbox for programmers designed to improve development efficiency.\n\nFunctions:\n- HTTP API debugging: supports get, post, put, delete, trace, head, options and other request methods\n- JSON format: supports JSON compression, formatting, removing escape characters, exporting to files, etc.\n- Color space: provide color cards, gradients, palettes, color value conversion\n- AppIcon: import images and generate iPhone, iPad, Mac, iWatch, Carplay, Android icons with one click\n- QR code: diversified QR code generation, supporting custom logo, watermark background, gif style\n- String Encode: supports Unicode, URL and Base64 codec\n- String encryption and decryption: supports common symmetric encryption such as AES and DES, and HASH algorithms such as SHA1, SHA224, SHA356, MD5, etc.\n-  Regular testing: regular expression debugging\n- Xpath and Css debugging: support Xpath and Css debugging\n- Random characters: custom character length, character set",
-                "tr": "熊貓工具箱是一款為程式員提供的開發工具箱，旨在提高開發效率。\n\n主要功能如下:\n- HTTP接口測試: 支持get、post、put、delete、trace、head、options等請求方式\n- JSON格式化：支持JSON壓縮、格式化、去除轉義符、導出至檔案等\n- 色彩空間：提供色卡、漸變色、調色板、色值轉換\n- AppIcon：導入圖片，一鍵生成iPhone、iPad、Mac、iWatch、Carplay、Android圖標\n- 二維碼: 多樣化二維碼生成，支持自定義logo、水印背景、gif樣式\n- 字串編解碼: 支持Unicode、URL、Base64編解碼\n- 字串加解密: 支持AES、DES等常用對稱加密和SHA1、SHA224、SHA356、MD5等HASH算法\n- 正則測試: 正則表達式測試\n- Xpath和Css選擇測試: 支持Xpath和Css選擇測試\n- 隨機字元: 自定義字元長度、字元集"
+                "cn": "熊猫工具箱是一款为程序员提供的开发工具箱，旨在提高开发效率。",
+                "en": "The Panda Toolbox is a development toolbox for programmers designed to improve development efficiency.",
+                "tr": "熊貓工具箱是一款為程式員提供的開發工具箱，旨在提高開發效率。"
             },
             "id": "6451439083",
             "platform": "mac"
