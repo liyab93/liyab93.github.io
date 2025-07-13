@@ -7,7 +7,7 @@ nav-menu: true
 permalink: /kaka
 language: cn
 ---
-[![AppStrore](./assets/images/mac_appstore.svg)](https://apps.apple.com/app/id6451439083)
+[![AppStrore](./assets/images/mac_appstore.svg)](https://apps.apple.com/app/id6747281055)
 
 ## 简介
 咔咔是一款专为 Mac 用户设计的访达右键扩展工具，通过简单的右键操作，让您的文件管理工作事半功倍。

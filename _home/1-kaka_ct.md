@@ -7,7 +7,7 @@ nav-menu: true
 permalink: /ct/kaka
 language: ct
 ---
-[![AppStrore](./assets/images/mac_appstore.svg)](https://apps.apple.com/app/id6451439083)
+[![AppStrore](./assets/images/mac_appstore.svg)](https://apps.apple.com/app/id6747281055)
 
 ## 简介
 咔咔是專為 Mac 用戶打造的 Finder 右鍵擴展工具，透過簡單的右鍵操作，讓您的檔案管理變得更加便捷高效。

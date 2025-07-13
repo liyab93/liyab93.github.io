@@ -7,7 +7,7 @@ nav-menu: true
 permalink: /en/kaka
 language: en
 ---
-[![AppStrore](./assets/images/mac_appstore.svg)](https://apps.apple.com/app/id6451439083)
+[![AppStrore](./assets/images/mac_appstore.svg)](https://apps.apple.com/app/id6747281055)
 
 ## 简介
 Kaka is a comprehensive Finder extension designed to revolutionize your Mac file management experience. With intuitive right-click actions, boost your productivity and streamline your workflow.
