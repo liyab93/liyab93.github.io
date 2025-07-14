@@ -9,8 +9,8 @@ language: en
 ---
 [![AppStrore](./assets/images/mac_appstore.svg)](https://apps.apple.com/app/id6747281055)
 
-## 简介
-Kaka is a comprehensive Finder extension designed to revolutionize your Mac file management experience. With intuitive right-click actions, boost your productivity and streamline your workflow.
+## Introduce
+Kaka is a powerful Finder enhancement tool designed to streamline your file management experience. With intuitive right-click actions, it transforms routine file operations into efficient, one-click solutions.
 
 **Key Features:**
 - **Quick Launch** - Configure custom apps to open files and folders instantly
@@ -21,11 +21,9 @@ Kaka is a comprehensive Finder extension designed to revolutionize your Mac file
 - **Display Toggle** - Quickly show/hide desktop icons and hidden files
 - **Permanent Delete** - Delete files directly without moving to Trash
 
-Whether you're a developer, designer, or everyday user, Kaka transforms your Mac into a more efficient workspace. Simple installation, immediate results - experience the future of file management.
+With its clean, intuitive interface, every feature is just a click away. Whether you're a designer, developer, or everyday user, Kaka significantly boosts your productivity and simplifies your digital workspace management.
 
-Perfect for professionals who value efficiency and anyone looking to unlock their Mac's full potential.
-
-## 预览
+## Preview
 
 |       |  |
 | ----------- | ----------- |
