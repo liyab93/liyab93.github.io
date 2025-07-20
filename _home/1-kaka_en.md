@@ -1,5 +1,5 @@
 ---
-title: 咔咔
+title:  Kaka
 layout: post
 description: Supercharge your Mac file management with powerful right-click shortcuts
 image: assets/images/kaka_1.png
