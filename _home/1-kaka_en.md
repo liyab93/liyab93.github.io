@@ -2,12 +2,12 @@
 title:  Kaka
 layout: post
 description: Supercharge your Mac file management with powerful right-click shortcuts
-image: assets/images/kaka_1.png
+image: ./../assets/images/kaka_1.png
 nav-menu: true
 permalink: /en/kaka
 language: en
 ---
-[![AppStrore](./assets/images/mac_appstore.svg)](https://apps.apple.com/app/id6747281055)
+[![AppStrore](./../assets/images/mac_appstore.svg)](https://apps.apple.com/app/id6747281055)
 
 ## Introduce
 Kaka is a powerful Finder enhancement tool designed to streamline your file management experience. With intuitive right-click actions, it transforms routine file operations into efficient, one-click solutions.
@@ -27,5 +27,5 @@ With its clean, intuitive interface, every feature is just a click away. Whether
 
 |       |  |
 | ----------- | ----------- |
-| ![](./assets/images/kaka_1.png) | ![](./assets/images/kaka_2.png) |
-| ![](./assets/images/kaka_3.png) | ![](./assets/images/kaka_4.png) |
+| ![](./../assets/images/kaka_1.png) | ![](./../assets/images/kaka_2.png) |
+| ![](./../assets/images/kaka_3.png) | ![](./../assets/images/kaka_4.png) |
