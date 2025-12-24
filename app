@@ -76,5 +76,12 @@
             "id": "6747281055",
             "platform": "mac"
         }
-    ]
+    ],
+"feature": [
+{
+"key": 0,
+"version": 1766582261,
+"enabled": true
+}
+]
 }
