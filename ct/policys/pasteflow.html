@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>PasteFlow 隱私政策 | liyb</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="/assets/css/main.css" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+</head>
+
+
+<body>
+
+    
+
+
+
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header">
+	<a href="/ct/" class="logo"><strong>liyb</strong> <span>用代碼，創造無限可能</span></a>
+	<nav>
+		<div class="language-selector" style="display: inline-block;">
+			<style>
+				@media screen and (max-width: 736px) {
+					.language-selector { 
+                        margin-right: 4px;
+                        margin-top: 7px; 
+                    }
+				}
+				@media screen and (min-width: 737px) {
+					.language-selector { 
+                        margin-right: 8px;
+                        margin-top: 14px; 
+                    }
+				}
+			</style>
+			<select id="languageSelect" onchange="changeLanguage(this.value)" style="background: transparent; border: 1px solid #fff; color: #fff; width: 30px; height: 30px; border-radius: 50%; text-align-last: center; -webkit-appearance: none; -moz-appearance: none; appearance: none; cursor: pointer; padding: 0; vertical-align: middle;">
+				<option value="cn">中</option>
+				<option value="en">EN</option>
+				<option value="ct">繁</option>
+			</select>
+		</div>
+		<a href="#menu">菜單</a>
+	</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+	<ul class="links">
+        
+        
+
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+                    <li><a href="/ct/index">首頁</a></li>
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+
+        
+            
+            
+                
+            
+        
+            
+            
+                
+                    
+                        <li><a href="/ct/kaka">咔咔</a></li>
+                    
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+                    
+                        <li><a href="/ct/paperkite">紙鳶</a></li>
+                    
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+                    
+                        <li><a href="/ct/bearcalendar">小熊日曆</a></li>
+                    
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+                    
+                        <li><a href="/ct/pandatool">熊貓開發工具箱</a></li>
+                    
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+	</ul>
+	<ul class="actions vertical">
+		<li><a href="#" class="button special fit">開始使用</a></li>
+	</ul>
+</nav>
+
+<script>
+function changeLanguage(lang) {
+    // 获取当前URL路径
+    let path = window.location.pathname;
+    // 移除开头和结尾的斜杠
+    path = path.replace(/^\/?|\/?$/g, '');
+    // 分割路径
+    let parts = path.split('/');
+    
+    // 检查当前URL是否已经包含语言代码
+    if (['en', 'ct'].includes(parts[0])) {
+        // 当前路径包含语言代码
+        if (lang === 'cn') {
+            // 切换到简体中文，移除语言代码
+            parts.shift();
+        } else {
+            // 切换到其他语言，替换语言代码
+            parts[0] = lang;
+        }
+    } else {
+        // 当前路径不包含语言代码
+        if (lang !== 'cn') {
+            // 切换到非简体中文，添加语言代码
+            parts.unshift(lang);
+        }
+        // 如果切换到简体中文，保持当前路径不变
+    }
+    
+    // 重新组合URL并跳转
+    let newPath = parts.length > 0 ? '/' + parts.join('/') : '/';
+    window.location.href = newPath;
+}
+
+// 页面加载时设置当前语言
+document.addEventListener('DOMContentLoaded', function() {
+    let path = window.location.pathname;
+    let lang = path.split('/')[1];
+    if (['en', 'ct'].includes(lang)) {
+        document.getElementById('languageSelect').value = lang;
+    } else {
+        document.getElementById('languageSelect').value = 'cn'; // 默认语言
+    }
+});
+</script>
+ 
+    
+    
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h1>PasteFlow 隱私政策</h1>
+		</header>
+<!--		-->
+		<h1 id="pasteflow-隱私政策">PasteFlow 隱私政策</h1>
+
+<p>感謝您使用 PasteFlow（以下簡稱「本應用」）。我們高度重視您的隱私與資料安全。本隱私政策旨在清楚說明本應用如何收集、使用、儲存及保護您的個人資訊。</p>
+
+<h2 id="1-資料本地儲存">1. 資料本地儲存</h2>
+
+<p>本應用<strong>不會</strong>將您的剪貼簿內容上傳至任何雲端伺服器或第三方服務。所有剪貼簿歷史記錄（包括文字、圖片、檔案、音訊、影片等）均<strong>僅儲存於您的本機裝置</strong>中，且僅可透過本應用在您的裝置上存取。</p>
+
+<h2 id="2-所需系統權限">2. 所需系統權限</h2>
+
+<p>為實現核心功能，本應用需要請求以下 macOS 系統權限：</p>
+
+<ul>
+  <li><strong>輔助功能（Accessibility）權限</strong>：用於監聽系統剪貼簿變化，擷取複製內容。</li>
+</ul>
+
+<p>這些權限僅用於實現文件所述功能，不會用於其他目的。您可在系統設定中隨時撤銷授權，但撤銷後部分功能將無法使用。</p>
+
+<h2 id="3-敏感資訊保護">3. 敏感資訊保護</h2>
+
+<p>本應用內建敏感內容過濾機制。當偵測到可能包含密碼、銀行卡號等敏感資訊的內容（例如來自密碼管理器或登入表單的複製操作）時，將<strong>自動忽略該筆剪貼簿記錄</strong>，不會儲存或顯示。</p>
+
+<h2 id="4-資料保留與刪除">4. 資料保留與刪除</h2>
+
+<p>您可隨時透過以下方式管理資料：</p>
+
+<ul>
+  <li>在設定中手動清除全部剪貼簿歷史；</li>
+  <li>設定自動保留策略（如保留1天、7天或最多365天）；</li>
+  <li>設定最大保留筆數（10~5000筆），超出後自動刪除最舊記錄。</li>
+</ul>
+
+<p>解除安裝本應用時，所有本機儲存的剪貼簿資料將被自動清除。</p>
+
+<h2 id="5-第三方共享">5. 第三方共享</h2>
+
+<p>我們<strong>不會</strong>與任何第三方共用、出售或轉讓您的剪貼簿資料。</p>
+
+<h2 id="6-聯絡我們">6. 聯絡我們</h2>
+
+<p>如對本隱私政策有任何疑問，請聯絡：<a href="mailto:privacy@pasteflow.app">liyb@aliyun.com</a></p>
+
+	</div>
+</section>
+
+</div>
+
+    <!-- Contact -->
+
+
+
+
+
+<section id="contact">
+	<div class="inner">
+		<section>
+			<form id="contactForm" onsubmit="event.preventDefault(); sendEmail();">
+				<div class="field">
+					<label for="title">標題</label>
+					<input type="text" name="name" id="name" />
+				</div>
+				<div class="field">
+					<label for="message">內容</label>
+					<textarea name="message" id="message" rows="6"></textarea>
+				</div>
+				<ul class="actions">
+					<li><input type="submit" value="發送" class="special" /></li>
+					<li><input type="reset" value="清除" /></li>
+				</ul>
+			</form>
+		</section>
+		<section class="split">
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-envelope"></span>
+					<h3>郵箱</h3>
+					<a href="mailto:liyb@aliyun.com">liyb@aliyun.com</a>
+				</div>
+			</section>
+		</section>
+	</div>
+</section>
+
+<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				
+					
+						<li>
+							<a href="https://github.com/liyab93" class="icon alt fa-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+								<span class="label">GitHub</span>
+							</a>
+						</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+			</ul>
+			<ul class="copyright">
+                <li>版權所有 ©2024 liyb，保留所有權利。</a></li>
+			</ul>
+		</div>
+	</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.scrolly.min.js"></script>
+<script src="/assets/js/jquery.scrollex.min.js"></script>
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
+<script>
+	function sendEmail() {
+		const name = document.getElementById('name').value;
+		const message = document.getElementById('message').value;
+		const mailtoLink = `mailto:liyb@aliyun.com?subject=${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
+		window.location.href = mailtoLink;
+	}
+</script>
+
+</body>
+
+</html>

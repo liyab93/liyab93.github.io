@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Pexels 使用教程 | liyb</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="/assets/css/main.css" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+</head>
+
+
+<body>
+
+    
+
+
+
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header">
+	<a href="/ct/" class="logo"><strong>liyb</strong> <span>用代碼，創造無限可能</span></a>
+	<nav>
+		<div class="language-selector" style="display: inline-block;">
+			<style>
+				@media screen and (max-width: 736px) {
+					.language-selector { 
+                        margin-right: 4px;
+                        margin-top: 7px; 
+                    }
+				}
+				@media screen and (min-width: 737px) {
+					.language-selector { 
+                        margin-right: 8px;
+                        margin-top: 14px; 
+                    }
+				}
+			</style>
+			<select id="languageSelect" onchange="changeLanguage(this.value)" style="background: transparent; border: 1px solid #fff; color: #fff; width: 30px; height: 30px; border-radius: 50%; text-align-last: center; -webkit-appearance: none; -moz-appearance: none; appearance: none; cursor: pointer; padding: 0; vertical-align: middle;">
+				<option value="cn">中</option>
+				<option value="en">EN</option>
+				<option value="ct">繁</option>
+			</select>
+		</div>
+		<a href="#menu">菜單</a>
+	</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+	<ul class="links">
+        
+        
+
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+                    <li><a href="/ct/index">首頁</a></li>
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+
+        
+            
+            
+                
+            
+        
+            
+            
+                
+                    
+                        <li><a href="/ct/kaka">咔咔</a></li>
+                    
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+                    
+                        <li><a href="/ct/paperkite">紙鳶</a></li>
+                    
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+                    
+                        <li><a href="/ct/bearcalendar">小熊日曆</a></li>
+                    
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+                    
+                        <li><a href="/ct/pandatool">熊貓開發工具箱</a></li>
+                    
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+	</ul>
+	<ul class="actions vertical">
+		<li><a href="#" class="button special fit">開始使用</a></li>
+	</ul>
+</nav>
+
+<script>
+function changeLanguage(lang) {
+    // 获取当前URL路径
+    let path = window.location.pathname;
+    // 移除开头和结尾的斜杠
+    path = path.replace(/^\/?|\/?$/g, '');
+    // 分割路径
+    let parts = path.split('/');
+    
+    // 检查当前URL是否已经包含语言代码
+    if (['en', 'ct'].includes(parts[0])) {
+        // 当前路径包含语言代码
+        if (lang === 'cn') {
+            // 切换到简体中文，移除语言代码
+            parts.shift();
+        } else {
+            // 切换到其他语言，替换语言代码
+            parts[0] = lang;
+        }
+    } else {
+        // 当前路径不包含语言代码
+        if (lang !== 'cn') {
+            // 切换到非简体中文，添加语言代码
+            parts.unshift(lang);
+        }
+        // 如果切换到简体中文，保持当前路径不变
+    }
+    
+    // 重新组合URL并跳转
+    let newPath = parts.length > 0 ? '/' + parts.join('/') : '/';
+    window.location.href = newPath;
+}
+
+// 页面加载时设置当前语言
+document.addEventListener('DOMContentLoaded', function() {
+    let path = window.location.pathname;
+    let lang = path.split('/')[1];
+    if (['en', 'ct'].includes(lang)) {
+        document.getElementById('languageSelect').value = lang;
+    } else {
+        document.getElementById('languageSelect').value = 'cn'; // 默认语言
+    }
+});
+</script>
+ 
+    
+    
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h1>Pexels 使用教程</h1>
+		</header>
+<!--		-->
+		<h2 id="註冊登錄">註冊登錄</h2>
+
+<p><a href="https://www.pexels.com">Pexels 官網</a></p>
+
+<p><img src="./../../assets/images/pexels.png" alt="pexels" /></p>
+
+<h2 id="獲取秘鈅">獲取秘鈅</h2>
+
+<p><img src="./../../assets/images/pexels_1.png" alt="1" /></p>
+
+<p><img src="./../../assets/images/pexels_2.png" alt="2" /></p>
+
+<p><img src="./../../assets/images/pexels_3.png" alt="3" /></p>
+
+<h2 id="填寫秘鈅">填寫秘鈅</h2>
+
+<p>在紙鳶的設置 &gt; 服務配置 &gt; 點擊<code class="language-plaintext highlighter-rouge">+</code>號選中 Pexels，然後將剛才獲取到的秘鈅填寫到對應的位置即可。</p>
+
+
+	</div>
+</section>
+
+</div>
+
+    <!-- Contact -->
+
+
+
+
+
+<section id="contact">
+	<div class="inner">
+		<section>
+			<form id="contactForm" onsubmit="event.preventDefault(); sendEmail();">
+				<div class="field">
+					<label for="title">標題</label>
+					<input type="text" name="name" id="name" />
+				</div>
+				<div class="field">
+					<label for="message">內容</label>
+					<textarea name="message" id="message" rows="6"></textarea>
+				</div>
+				<ul class="actions">
+					<li><input type="submit" value="發送" class="special" /></li>
+					<li><input type="reset" value="清除" /></li>
+				</ul>
+			</form>
+		</section>
+		<section class="split">
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-envelope"></span>
+					<h3>郵箱</h3>
+					<a href="mailto:liyb@aliyun.com">liyb@aliyun.com</a>
+				</div>
+			</section>
+		</section>
+	</div>
+</section>
+
+<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				
+					
+						<li>
+							<a href="https://github.com/liyab93" class="icon alt fa-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+								<span class="label">GitHub</span>
+							</a>
+						</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+			</ul>
+			<ul class="copyright">
+                <li>版權所有 ©2024 liyb，保留所有權利。</a></li>
+			</ul>
+		</div>
+	</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.scrolly.min.js"></script>
+<script src="/assets/js/jquery.scrollex.min.js"></script>
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
+<script>
+	function sendEmail() {
+		const name = document.getElementById('name').value;
+		const message = document.getElementById('message').value;
+		const mailtoLink = `mailto:liyb@aliyun.com?subject=${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
+		window.location.href = mailtoLink;
+	}
+</script>
+
+</body>
+
+</html>
