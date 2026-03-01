@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Bear Calendar | liyb</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="/assets/css/main.css" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+</head>
+
+
+<body>
+
+    
+
+
+
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header">
+	<a href="/en/" class="logo"><strong>liyb</strong> <span>Use code, create unlimited possibilities</span></a>
+	<nav>
+		<div class="language-selector" style="display: inline-block;">
+			<style>
+				@media screen and (max-width: 736px) {
+					.language-selector { 
+                        margin-right: 4px;
+                        margin-top: 7px; 
+                    }
+				}
+				@media screen and (min-width: 737px) {
+					.language-selector { 
+                        margin-right: 8px;
+                        margin-top: 14px; 
+                    }
+				}
+			</style>
+			<select id="languageSelect" onchange="changeLanguage(this.value)" style="background: transparent; border: 1px solid #fff; color: #fff; width: 30px; height: 30px; border-radius: 50%; text-align-last: center; -webkit-appearance: none; -moz-appearance: none; appearance: none; cursor: pointer; padding: 0; vertical-align: middle;">
+				<option value="cn">中</option>
+				<option value="en">EN</option>
+				<option value="ct">繁</option>
+			</select>
+		</div>
+		<a href="#menu">Menu</a>
+	</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+	<ul class="links">
+        
+        
+
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+                    <li><a href="/en/index">Home</a></li>
+                
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+
+        
+            
+            
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+                    
+                        <li><a href="/en/kaka">Kaka</a></li>
+                    
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+                    
+                        <li><a href="/en/paperkite">PaperKite</a></li>
+                    
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+                    
+                        <li><a href="/en/bearcalendar">Bear Calendar</a></li>
+                    
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+                    
+                        <li><a href="/en/pandatool">Panda Developer Toool</a></li>
+                    
+                
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+	</ul>
+	<ul class="actions vertical">
+		<li><a href="#" class="button special fit">Get Started</a></li>
+	</ul>
+</nav>
+
+<script>
+function changeLanguage(lang) {
+    // 获取当前URL路径
+    let path = window.location.pathname;
+    // 移除开头和结尾的斜杠
+    path = path.replace(/^\/?|\/?$/g, '');
+    // 分割路径
+    let parts = path.split('/');
+    
+    // 检查当前URL是否已经包含语言代码
+    if (['en', 'ct'].includes(parts[0])) {
+        // 当前路径包含语言代码
+        if (lang === 'cn') {
+            // 切换到简体中文，移除语言代码
+            parts.shift();
+        } else {
+            // 切换到其他语言，替换语言代码
+            parts[0] = lang;
+        }
+    } else {
+        // 当前路径不包含语言代码
+        if (lang !== 'cn') {
+            // 切换到非简体中文，添加语言代码
+            parts.unshift(lang);
+        }
+        // 如果切换到简体中文，保持当前路径不变
+    }
+    
+    // 重新组合URL并跳转
+    let newPath = parts.length > 0 ? '/' + parts.join('/') : '/';
+    window.location.href = newPath;
+}
+
+// 页面加载时设置当前语言
+document.addEventListener('DOMContentLoaded', function() {
+    let path = window.location.pathname;
+    let lang = path.split('/')[1];
+    if (['en', 'ct'].includes(lang)) {
+        document.getElementById('languageSelect').value = lang;
+    } else {
+        document.getElementById('languageSelect').value = 'cn'; // 默认语言
+    }
+});
+</script>
+ 
+    
+    
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h1>Bear Calendar</h1>
+		</header>
+<!--		<span class="image main"><img src="/./../assets/images/calendar_1.png" alt="" /></span>-->
+		<p><a href="https://apps.apple.com/app/id6478820878"><img src="./../assets/images/appstore.svg" alt="iOS" /></a>
+<a href="https://apps.apple.com/app/id6477295542"><img src="./../assets/images/mac_appstore.svg" alt="macOS" /></a></p>
+
+<h2 id="introduce">Introduce</h2>
+<p>Bear Calendar is a simple and easy-to-use calendar on <a href="https://apps.apple.com/app/id6478820878">iOS</a> &amp; <a href="https://apps.apple.com/app/id6477295542">macOS</a> platform, providing a variety of Widgets styles for users to view the calendar is very convenient, hope to bring users the most convenient experience through simple design.</p>
+
+<p>Features:</p>
+<ul>
+  <li>Lunar calendar, festive seasons and statutory holidays</li>
+  <li>View system calendars and reminders</li>
+  <li>Custom status bar display style, supporting icons and dates</li>
+  <li>Provide a variety of dominant tone styles, suitable for dark mode</li>
+  <li>Support daily, weekly and monthly widget styles</li>
+</ul>
+
+<h2 id="preview">Preview</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="./../assets/images/calendar_1.png" alt="" /></td>
+      <td><img src="./../assets/images/calendar_2.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td><img src="./../assets/images/calendar_3.png" alt="" /></td>
+      <td><img src="./../assets/images/calendar_4.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td><img src="./../assets/images/calendar_5.png" alt="" /></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>
+</section>
+
+</div>
+
+    <!-- Contact -->
+
+
+
+
+
+<section id="contact">
+	<div class="inner">
+		<section>
+			<form id="contactForm" onsubmit="event.preventDefault(); sendEmail();">
+				<div class="field">
+					<label for="title">Title</label>
+					<input type="text" name="name" id="name" />
+				</div>
+				<div class="field">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" rows="6"></textarea>
+				</div>
+				<ul class="actions">
+					<li><input type="submit" value="Send" class="special" /></li>
+					<li><input type="reset" value="Clear" /></li>
+				</ul>
+			</form>
+		</section>
+		<section class="split">
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-envelope"></span>
+					<h3>Email</h3>
+					<a href="mailto:liyb@aliyun.com">liyb@aliyun.com</a>
+				</div>
+			</section>
+		</section>
+	</div>
+</section>
+
+<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				
+					
+						<li>
+							<a href="https://github.com/liyab93" class="icon alt fa-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+								<span class="label">GitHub</span>
+							</a>
+						</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+			</ul>
+			<ul class="copyright">
+                <li>Copyright ©2024 liyb, All right reserved.</a></li>
+			</ul>
+		</div>
+	</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.scrolly.min.js"></script>
+<script src="/assets/js/jquery.scrollex.min.js"></script>
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
+<script>
+	function sendEmail() {
+		const name = document.getElementById('name').value;
+		const message = document.getElementById('message').value;
+		const mailtoLink = `mailto:liyb@aliyun.com?subject=${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
+		window.location.href = mailtoLink;
+	}
+</script>
+
+</body>
+
+</html>
