@@ -4,7 +4,7 @@ layout: post
 description: PasteFlow is a powerful clipboard enhancement tool designed exclusively for Mac users. Say goodbye to the traditional single-item clipboard limitation and embrace a world where every copy is saved and instantly accessible.
 image: assets/images/pasteflow_1.png
 nav-menu: true
-permalink: /pasteflow
+permalink: /en/pasteflow
 language: en
 ---
 [![AppStrore](./assets/images/mac_appstore.svg)](https://apps.apple.com/app/id6758344696)

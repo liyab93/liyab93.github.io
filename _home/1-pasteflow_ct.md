@@ -4,7 +4,7 @@ layout: post
 description: PasteFlow PasteFlow 是一款智慧剪貼簿增強工具。告別傳統剪貼簿只能保存一條記錄的限制,讓每一次複製都被妥善保存,隨時調用。
 image: assets/images/pasteflow_1.png
 nav-menu: true
-permalink: /pasteflow
+permalink: /ct/pasteflow
 language: ct
 ---
 [![AppStrore](./assets/images/mac_appstore.svg)](https://apps.apple.com/app/id6758344696)
