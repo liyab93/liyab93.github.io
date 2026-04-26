@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>PasteFlow | liyb</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="/assets/css/main.css" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+</head>
+
+
+<body>
+
+    
+
+
+
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header">
+	<a href="/" class="logo"><strong>liyb</strong> <span>用代码，创造无限可能</span></a>
+	<nav>
+		<div class="language-selector" style="display: inline-block;">
+			<style>
+				@media screen and (max-width: 736px) {
+					.language-selector { 
+                        margin-right: 4px;
+                        margin-top: 7px; 
+                    }
+				}
+				@media screen and (min-width: 737px) {
+					.language-selector { 
+                        margin-right: 8px;
+                        margin-top: 14px; 
+                    }
+				}
+			</style>
+			<select id="languageSelect" onchange="changeLanguage(this.value)" style="background: transparent; border: 1px solid #fff; color: #fff; width: 30px; height: 30px; border-radius: 50%; text-align-last: center; -webkit-appearance: none; -moz-appearance: none; appearance: none; cursor: pointer; padding: 0; vertical-align: middle;">
+				<option value="cn">中</option>
+				<option value="en">EN</option>
+				<option value="ct">繁</option>
+			</select>
+		</div>
+		<a href="#menu">菜单</a>
+	</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+	<ul class="links">
+        
+        
+
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+                
+                    <li><a href="/">首页</a></li>
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+
+        
+            
+            
+                
+                    
+                        <li><a href="/pasteflow">PasteFlow</a></li>
+                    
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+                    
+                        <li><a href="/bearcalendar">小熊日历</a></li>
+                    
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+                    
+                        <li><a href="/kaka">咔咔</a></li>
+                    
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+                    
+                        <li><a href="/paperkite">纸鸢</a></li>
+                    
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+        
+            
+            
+                
+                    
+                        <li><a href="/pandatool">熊猫工具箱</a></li>
+                    
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+                
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+	</ul>
+	<ul class="actions vertical">
+		<li><a href="#" class="button special fit">开始使用</a></li>
+	</ul>
+</nav>
+
+<script>
+function changeLanguage(lang) {
+    // 获取当前URL路径
+    let path = window.location.pathname;
+    // 移除开头和结尾的斜杠
+    path = path.replace(/^\/?|\/?$/g, '');
+    // 分割路径
+    let parts = path.split('/');
+    
+    // 检查当前URL是否已经包含语言代码
+    if (['en', 'ct'].includes(parts[0])) {
+        // 当前路径包含语言代码
+        if (lang === 'cn') {
+            // 切换到简体中文，移除语言代码
+            parts.shift();
+        } else {
+            // 切换到其他语言，替换语言代码
+            parts[0] = lang;
+        }
+    } else {
+        // 当前路径不包含语言代码
+        if (lang !== 'cn') {
+            // 切换到非简体中文，添加语言代码
+            parts.unshift(lang);
+        }
+        // 如果切换到简体中文，保持当前路径不变
+    }
+    
+    // 重新组合URL并跳转
+    let newPath = parts.length > 0 ? '/' + parts.join('/') : '/';
+    window.location.href = newPath;
+}
+
+// 页面加载时设置当前语言
+document.addEventListener('DOMContentLoaded', function() {
+    let path = window.location.pathname;
+    let lang = path.split('/')[1];
+    if (['en', 'ct'].includes(lang)) {
+        document.getElementById('languageSelect').value = lang;
+    } else {
+        document.getElementById('languageSelect').value = 'cn'; // 默认语言
+    }
+});
+</script>
+ 
+    
+    
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h1>PasteFlow</h1>
+		</header>
+<!--		<span class="image main"><img src="/assets/images/pasteflow_1.png" alt="" /></span>-->
+		<p><a href="https://apps.apple.com/app/id6758344696"><img src="./assets/images/mac_appstore.svg" alt="AppStrore" /></a></p>
+
+<h2 id="简介">简介</h2>
+<p>PasteFlow 是一款智能剪切板增强工具。告别传统剪切板只能保存一条记录的限制,让每一次复制都被妥善保存,随时调用。</p>
+
+<ul>
+  <li>
+    <p>无限历史记录
+• 自动保存所有复制内容,支持最多 5000 条记录
+• 文本、图片、视频、文件全方位支持
+• 智能识别内容类型,自动分类展示</p>
+  </li>
+  <li>
+    <p>快速检索
+• 全文搜索,即输即查
+• 按内容类型、来源应用智能分组
+• 一键置顶常用内容,快速访问</p>
+  </li>
+  <li>
+    <p>高效操作
+• 自定义快捷键,秒速呼出面板
+• 来源应用图标标识,清晰追溯
+• 精确时间记录,便于查找</p>
+  </li>
+  <li>
+    <p>精致界面
+• 毛玻璃半透明设计,优雅融入系统
+• 深色/浅色主题,跟随系统自动切换
+• 居中/居底双模式,自由选择展示方式
+• 可自定义圆角、字体大小等细节</p>
+  </li>
+  <li>
+    <p>隐私安全
+• 所有数据仅存储在本地,绝不上传
+• 自动过滤敏感内容,保护隐私</p>
+  </li>
+  <li>
+    <p>适用场景
+• 写作创作 - 随时调用历史素材片段
+• 编程开发 - 快速复用代码片段
+• 设计工作 - 管理图片素材库
+• 日常办公 - 提升文档编辑效率
+• 多任务处理 - 在不同应用间快速传递信息</p>
+  </li>
+</ul>
+
+<p>让 PasteFlow 成为你的效率倍增器,开启智能剪切板时代!</p>
+
+<h2 id="预览">预览</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="./assets/images/pasteflow_1.png" alt="" /></td>
+      <td><img src="./assets/images/pasteflow_2.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td><img src="./assets/images/pasteflow_3.png" alt="" /></td>
+      <td><img src="./assets/images/pasteflow_4.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td><img src="./assets/images/pasteflow_5.png" alt="" /></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>
+</section>
+
+</div>
+
+    <!-- Contact -->
+
+
+
+
+
+<section id="contact">
+	<div class="inner">
+		<section>
+			<form id="contactForm" onsubmit="event.preventDefault(); sendEmail();">
+				<div class="field">
+					<label for="title">标题</label>
+					<input type="text" name="name" id="name" />
+				</div>
+				<div class="field">
+					<label for="message">内容</label>
+					<textarea name="message" id="message" rows="6"></textarea>
+				</div>
+				<ul class="actions">
+					<li><input type="submit" value="发送" class="special" /></li>
+					<li><input type="reset" value="清空" /></li>
+				</ul>
+			</form>
+		</section>
+		<section class="split">
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-envelope"></span>
+					<h3>邮箱</h3>
+					<a href="mailto:liyb@aliyun.com">liyb@aliyun.com</a>
+				</div>
+			</section>
+		</section>
+	</div>
+</section>
+
+<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				
+					
+						<li>
+							<a href="https://github.com/liyab93" class="icon alt fa-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+								<span class="label">GitHub</span>
+							</a>
+						</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+			</ul>
+			<ul class="copyright">
+                <li>版权所有 ©2024 liyb，保留所有权利。</a></li>
+			</ul>
+		</div>
+	</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.scrolly.min.js"></script>
+<script src="/assets/js/jquery.scrollex.min.js"></script>
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
+<script>
+	function sendEmail() {
+		const name = document.getElementById('name').value;
+		const message = document.getElementById('message').value;
+		const mailtoLink = `mailto:liyb@aliyun.com?subject=${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
+		window.location.href = mailtoLink;
+	}
+</script>
+
+</body>
+
+</html>
