@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 · liyb</title>
+<link rel="icon" href="/assets/images/site-icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#07080d}
+::selection{background:#a855f7;color:#fff}
+@keyframes nf-grid{0%{background-position:0 0,0 0}100%{background-position:56px 56px,56px 56px}}
+@keyframes nf-glitch1{0%,100%{clip-path:inset(0 0 85% 0)}20%{clip-path:inset(28% 0 40% 0)}40%{clip-path:inset(60% 0 12% 0)}60%{clip-path:inset(8% 0 72% 0)}80%{clip-path:inset(45% 0 30% 0)}}
+@keyframes nf-glitch2{0%,100%{clip-path:inset(70% 0 8% 0)}25%{clip-path:inset(12% 0 60% 0)}50%{clip-path:inset(40% 0 38% 0)}75%{clip-path:inset(80% 0 5% 0)}}
+@keyframes nf-shift{0%,100%{transform:translate(0,0)}25%{transform:translate(-3px,1px)}50%{transform:translate(2px,-1px)}75%{transform:translate(-1px,2px)}}
+@keyframes nf-flicker{0%,100%{opacity:1}48%{opacity:1}49%{opacity:.4}50%{opacity:1}92%{opacity:1}93%{opacity:.6}94%{opacity:1}}
+@keyframes nf-scan{0%{transform:translateY(-100%)}100%{transform:translateY(2400%)}}
+@keyframes nf-blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes nf-float{0%,100%{transform:translate(0,0)}50%{transform:translate(24px,-30px)}}
+.nf-btn-primary{transition:transform .25s}
+.nf-btn-primary:hover{transform:translateY(-2px)}
+.nf-btn-ghost{transition:border-color .25s}
+.nf-btn-ghost:hover{border-color:#a855f7}
+</style>
+</head>
+<body>
+<div style="position:relative;min-height:100vh;overflow:hidden;background:radial-gradient(130% 100% at 50% -10%, #11131f, #07080d 62%);color:#e9ebf4;font-family:'Space Grotesk',-apple-system,BlinkMacSystemFont,'PingFang SC','PingFang TC','Hiragino Sans GB','Microsoft YaHei',sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 20px">
+
+  <!-- moving grid -->
+  <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(168,85,247,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(168,85,247,.07) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 45%,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse 80% 70% at 50% 45%,#000 20%,transparent 75%);animation:nf-grid 5s linear infinite;pointer-events:none"></div>
+  <!-- glow blobs -->
+  <div style="position:absolute;top:18%;left:14%;width:380px;height:380px;background:radial-gradient(circle,rgba(168,85,247,.22),transparent 65%);filter:blur(20px);animation:nf-float 14s ease-in-out infinite;pointer-events:none"></div>
+  <div style="position:absolute;bottom:12%;right:12%;width:320px;height:320px;background:radial-gradient(circle,rgba(124,58,237,.18),transparent 65%);filter:blur(20px);animation:nf-float 18s ease-in-out infinite reverse;pointer-events:none"></div>
+  <!-- scanline -->
+  <div style="position:absolute;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,rgba(168,85,247,.5),transparent);animation:nf-scan 6s linear infinite;pointer-events:none"></div>
+
+  <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center">
+
+    <div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.32em;color:#a855f7;margin-bottom:24px;animation:nf-flicker 4s infinite">SIGNAL_LOST</div>
+
+    <!-- glitch 404 -->
+    <div style="position:relative;animation:nf-shift 3.4s steps(2) infinite">
+      <div style="font-family:'JetBrains Mono',monospace;font-weight:700;font-size:clamp(96px,26vw,260px);line-height:.9;letter-spacing:-.02em;color:#f3f0ff;text-shadow:0 0 40px rgba(168,85,247,.35)">404</div>
+      <div style="position:absolute;inset:0;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:clamp(96px,26vw,260px);line-height:.9;letter-spacing:-.02em;color:#22d3ee;mix-blend-mode:screen;animation:nf-glitch1 2.6s infinite linear alternate;transform:translateX(-4px)">404</div>
+      <div style="position:absolute;inset:0;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:clamp(96px,26vw,260px);line-height:.9;letter-spacing:-.02em;color:#f43f8e;mix-blend-mode:screen;animation:nf-glitch2 3.1s infinite linear alternate;transform:translateX(4px)">404</div>
+    </div>
+
+    <h1 id="nf-title" style="font-size:clamp(22px,3.6vw,34px);font-weight:600;letter-spacing:-.01em;margin-top:28px;margin-bottom:14px"></h1>
+    <p id="nf-sub" style="color:#9aa0b8;font-size:clamp(15px,1.8vw,17px);line-height:1.7;max-width:440px;margin-bottom:14px;text-wrap:pretty"></p>
+
+    <!-- terminal line -->
+    <div style="display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:13px;color:#666c84;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);border-radius:10px;padding:10px 16px;margin-bottom:40px">
+      <span style="color:#a855f7">~</span>
+      <span id="nf-cmd">cd /home --recover</span>
+      <span style="width:8px;height:15px;background:#a855f7;display:inline-block;animation:nf-blink 1s step-end infinite"></span>
+    </div>
+
+    <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
+      <a id="nf-home" class="nf-btn-primary" href="/" style="display:inline-flex;align-items:center;gap:9px;padding:14px 30px;border-radius:12px;background:linear-gradient(135deg,#a855f7,#7c3aed);color:#fff;text-decoration:none;font-weight:600;font-size:15px;box-shadow:0 10px 34px rgba(168,85,247,.3)"><span id="nf-home-label"></span> <span style="font-size:16px">&#8594;</span></a>
+      <a id="nf-contact" class="nf-btn-ghost" href="mailto:liyb@aliyun.com" style="display:inline-flex;align-items:center;padding:14px 30px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03);color:#e9ebf4;text-decoration:none;font-weight:600;font-size:15px"></a>
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function () {
+  var p = location.pathname || '/';
+  var lang = (p === '/en' || p.indexOf('/en/') === 0) ? 'en'
+           : (p === '/ct' || p.indexOf('/ct/') === 0) ? 'ct'
+           : 'cn';
+  var dict = {
+    cn: { htmlLang: 'zh-Hans', title: '页面信号丢失', sub: '你要找的页面不存在，或已经被移动到别处。检查一下链接，或返回安全地带。', home: '返回首页', contact: '联系我', href: '/' },
+    ct: { htmlLang: 'zh-Hant', title: '頁面訊號丟失', sub: '你要找的頁面不存在，或已經被移動到別處。檢查一下連結，或返回安全地帶。', home: '返回首頁', contact: '聯絡我', href: '/ct/' },
+    en: { htmlLang: 'en', title: 'Signal to page lost', sub: "The page you're looking for doesn't exist, or has been moved elsewhere. Check the link, or head back to safety.", home: 'Back home', contact: 'Contact', href: '/en/' }
+  };
+  var t = dict[lang];
+  document.documentElement.lang = t.htmlLang;
+  document.getElementById('nf-title').textContent = t.title;
+  document.getElementById('nf-sub').textContent = t.sub;
+  document.getElementById('nf-home-label').textContent = t.home;
+  document.getElementById('nf-home').setAttribute('href', t.href);
+  document.getElementById('nf-contact').textContent = t.contact;
+})();
+</script>
+</body>
+</html>
