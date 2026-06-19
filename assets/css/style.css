@@ -262,8 +262,8 @@ img.brand-mark{transform:none;background:none;object-fit:cover;box-shadow:0 0 14
 }
 .sc-gallery.sc-strip::-webkit-scrollbar{height:8px}
 .sc-gallery.sc-strip::-webkit-scrollbar-thumb{background:var(--border);border-radius:999px}
-.sc-gallery.sc-strip .sc-frame{flex:0 0 auto;height:400px;scroll-snap-align:start}
-.sc-gallery.sc-strip .sc-frame img{width:auto;height:100%;max-width:none}
+.sc-gallery.sc-strip .sc-frame{flex:0 0 auto;height:400px;max-width:100%;scroll-snap-align:start}
+.sc-gallery.sc-strip .sc-frame img{width:auto;height:100%;max-width:100%;object-fit:contain}
 /* 单张：左对齐，限高不撑满 */
 .sc-gallery.sc-solo{display:flex}
 .sc-gallery.sc-solo .sc-frame{max-width:100%}
@@ -273,6 +273,21 @@ img.brand-mark{transform:none;background:none;object-fit:cover;box-shadow:0 0 14
 .sc-frame img{display:block;object-fit:cover}
 .sc-frame figcaption{position:absolute;left:0;right:0;bottom:0;padding:18px 14px 10px;font-size:12px;color:#fff;font-family:'JetBrains Mono',monospace;letter-spacing:.04em;white-space:nowrap;background:linear-gradient(transparent,rgba(0,0,0,.72))}
 
+/* ---------- 截图灯箱（点击放大） ---------- */
+.sc-frame img.is-zoomable{cursor:zoom-in}
+.lightbox{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(5,6,10,.9);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.lightbox[hidden]{display:none}
+.lb-img{max-width:min(96vw,1200px);max-height:90vh;width:auto;height:auto;border-radius:14px;box-shadow:0 24px 70px rgba(0,0,0,.6);object-fit:contain}
+.lb-cap{position:fixed;left:0;right:0;bottom:22px;text-align:center;color:#fff;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.04em;padding:0 16px;pointer-events:none}
+.lb-cap[hidden]{display:none}
+.lb-close,.lb-nav{position:fixed;display:flex;align-items:center;justify-content:center;border-radius:50%;cursor:pointer;line-height:1;color:var(--text);border:1px solid var(--border);background:color-mix(in srgb,var(--bg) 68%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:border-color .2s}
+.lb-close:hover,.lb-nav:hover{border-color:var(--accent)}
+.lb-close{top:18px;right:20px;width:44px;height:44px;font-size:26px}
+.lb-nav{top:50%;transform:translateY(-50%);width:48px;height:48px;font-size:26px}
+.lb-prev{left:20px}
+.lb-next{right:20px}
+.lb-nav[hidden]{display:none}
+
 /* ---------- responsive ---------- */
 @media (max-width:760px){
   .nav-links{display:none}
@@ -281,4 +296,8 @@ img.brand-mark{transform:none;background:none;object-fit:cover;box-shadow:0 0 14
 }
 @media (max-width:600px){
   .sc-gallery.sc-strip .sc-frame{height:340px}
+  .lightbox{padding:14px}
+  .lb-nav{width:42px;height:42px;font-size:24px}
+  .lb-prev{left:10px}
+  .lb-next{right:10px}
 }

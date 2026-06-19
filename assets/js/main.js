@@ -213,4 +213,81 @@
     });
     update();
   });
+
+  // ---- 截图点击放大（灯箱） ----
+  var zoomBoxes = [].slice.call(document.querySelectorAll('[data-sc-zoom]'));
+  if (zoomBoxes.length) {
+    var prevLabel = '', nextLabel = '', closeLabel = 'Close';
+    zoomBoxes.forEach(function (b) {
+      prevLabel = b.getAttribute('data-lb-prev') || prevLabel;
+      nextLabel = b.getAttribute('data-lb-next') || nextLabel;
+      closeLabel = b.getAttribute('data-lb-close') || closeLabel;
+    });
+
+    var lb = document.createElement('div');
+    lb.className = 'lightbox';
+    lb.hidden = true;
+    lb.innerHTML =
+      '<button class="lb-close" type="button">&times;</button>' +
+      '<button class="lb-nav lb-prev" type="button">&#8249;</button>' +
+      '<img class="lb-img" alt="">' +
+      '<div class="lb-cap" hidden></div>' +
+      '<button class="lb-nav lb-next" type="button">&#8250;</button>';
+    document.body.appendChild(lb);
+
+    var lbImg = lb.querySelector('.lb-img');
+    var lbCap = lb.querySelector('.lb-cap');
+    var lbPrev = lb.querySelector('.lb-prev');
+    var lbNext = lb.querySelector('.lb-next');
+    var lbClose = lb.querySelector('.lb-close');
+    lbClose.setAttribute('aria-label', closeLabel);
+    lbPrev.setAttribute('aria-label', prevLabel);
+    lbNext.setAttribute('aria-label', nextLabel);
+
+    var group = [], cur = 0;
+
+    function render() {
+      var img = group[cur];
+      lbImg.src = img.currentSrc || img.src;
+      lbImg.alt = img.alt || '';
+      var frame = img.closest ? img.closest('.sc-frame') : null;
+      var fc = frame && frame.querySelector('figcaption');
+      var text = fc ? fc.textContent.trim() : '';
+      lbCap.textContent = text;
+      lbCap.hidden = !text;
+      var multi = group.length > 1;
+      lbPrev.hidden = !multi;
+      lbNext.hidden = !multi;
+    }
+    function step(d) { cur = (cur + d + group.length) % group.length; render(); }
+    function open(imgs, i) {
+      group = imgs; cur = i; render();
+      lb.hidden = false;
+      document.documentElement.style.overflow = 'hidden';
+    }
+    function close() {
+      lb.hidden = true;
+      document.documentElement.style.overflow = '';
+      lbImg.removeAttribute('src');
+    }
+
+    zoomBoxes.forEach(function (box) {
+      var imgs = [].slice.call(box.querySelectorAll('.sc-frame img'));
+      imgs.forEach(function (img, i) {
+        img.classList.add('is-zoomable');
+        img.addEventListener('click', function () { open(imgs, i); });
+      });
+    });
+
+    lbClose.addEventListener('click', close);
+    lbPrev.addEventListener('click', function () { step(-1); });
+    lbNext.addEventListener('click', function () { step(1); });
+    lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+    document.addEventListener('keydown', function (e) {
+      if (lb.hidden) return;
+      if (e.key === 'Escape') close();
+      else if (e.key === 'ArrowLeft') step(-1);
+      else if (e.key === 'ArrowRight') step(1);
+    });
+  }
 })();
